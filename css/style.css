@@ -1,0 +1,78 @@
+body {
+    background-color: #b2ad7f;
+    text-align: center;
+}
+
+h1 {
+    color: #000000;
+    font-family: Helvetica, sans-serif;
+    font-size: 250%;
+}
+
+h2 {
+    color: #742020;
+    font-family: Helvetica, sans-serif;
+}
+
+h3 {
+    color: #000000;
+    font-family: Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+p {
+    color: #000000;
+    font-family: 'Times New Roman', serif;
+}
+
+a {
+    ;
+}
+
+ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;   
+}
+
+footer {
+    font-style: italic;
+}
+
+img {
+  vertical-align:middle;
+}
+
+/* user-defined classes */
+
+.menu-item {
+    margin-left: 5em;
+    margin-right: 5em;
+    font-weight: normal;
+    font-family: Helvetica;
+    font-size: 75%;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.menu-item:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.title {
+    ;
+    ;
+}
+
+.author {
+    ;
+    ;
+}
+
+.school {
+    ;
+    ;
+}
