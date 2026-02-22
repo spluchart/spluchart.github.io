@@ -1,0 +1,353 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --honeydew-color:      #f1faee;
+  --nophoto-blue-color:  #a8dadc;
+  --berkeley-blue-color: #1d3557;
+  --red-pantone-color:   #e63946;
+  --black-color:         #000000;
+
+  --background-color:       var(--honeydew-color);
+  --menu-text-color:        var(--berkeley-blue-color);
+  --menu-text-hover-color:  var(--red-pantone-color);
+  --main-text-color:        var(--berkeley-blue-color);
+  --card-background-color:  var(--berkeley-blue-color);
+  --card-text-color:        var(--honeydew-color);
+  --pricing-title-color:    var(--berkeley-blue-color);
+  --pricing-text-color:     var(--black-color);
+  --pricing-item-color:     var(--nophoto-blue-color);
+  --pricing-euros-color:    var(--red-pantone-color);
+}
+
+html {
+  scroll-padding-top: 170px;  /* height of the sticky header*/
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  height: 100vh;
+  background: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+menu {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;  /* no image can expand beyond its div */
+}
+
+/* navbar */
+.navbar {
+  background: url("./images/arc_en_ciel_top_left_corner.svg") no-repeat;
+  background-size: 7%;
+  padding: 40px;
+  z-index: 9999;  /* keep it on top of everything else */
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .desktop-menu menu {
+  display: flex;
+}
+
+.navbar menu li a {
+  padding: 10px 20px;
+  display: block;
+  color: var(--menu-text-color);
+  font-weight: 600;  /* 600 for semi-bold */
+  transition: 0.5s;
+  font-size: x-large;
+}
+
+.navbar menu li a:hover {
+  color: var(--menu-text-hover-color);
+}
+
+
+/* dropdown menu */
+
+/* Dropdown project list */
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--background-color);
+  min-width: 600px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: var(--nophoto-blue-color)}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: var(--nophoto-blue-color);
+}
+
+
+/* welcome */
+.main {
+  margin-top: 50px;
+}
+
+.welcome {
+  color: var(--main-text-color);
+  margin-bottom: 50px;
+}
+
+.welcome .container {
+  background: url("./images/welcome.jpg") no-repeat;
+  background-size: 30%;
+  background-position: right top;
+  height: 600px;
+}
+
+.welcome-text {
+  width: 55%;
+  text-align: justify;
+  text-justify: inter-character;
+}
+
+/* testimonials */
+.testimonials {
+  color: var(--main-text-color);
+  margin-bottom: 50px;
+}
+
+.testimonials h1 {
+  margin-bottom: 20px;
+}
+
+div.testimonials-scroll {
+  overflow: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.testimonials-grid {
+  display: grid;
+  white-space: nowrap;
+  grid-template-columns: 
+  10px
+  repeat(6, calc(50%-20px))
+  10px;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+}
+
+/* occupies the 10px columns at both ends of the grid */
+.testimonials-grid::before, .testimonials-grid::after {
+  content:'';
+}
+
+.testimonials .card {
+  background: var(--card-background-color);
+  min-width: 350px;
+  white-space: wrap;
+  color: var(--card-text-color);
+  border-radius: 10px;
+  padding: 20px;
+  opacity: 0.9; /* just testing to make the card less aggressive on the eye */
+}
+
+.testimonials .card p:nth-child(2){ /* add space between quote and his author  */
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+/* pricing */
+.pricing {
+  margin-bottom: 50px;
+}
+
+.pricing hr {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  border-top: 1px dotted #000000;
+}
+
+.pricing h1 {
+  margin-bottom: 20px;
+  color: var(--pricing-title-color);
+}
+
+.pricing h2 {
+  margin-bottom: 20px;
+  color: var(--pricing-title-color);
+}
+
+.pricing h3 {
+  color: var(--pricing-title-color);
+  font-weight: 600;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.pricing-text {
+  text-align: justify;
+  text-justify: inter-character;
+}
+
+.pricing-item {
+  color: var(--pricing-item-color);
+  margin-top: 35px;
+  font-weight: 600;
+}
+
+.pricing-euros {
+  color: var(--pricing-euros-color);
+}
+
+.column {
+  background: var(--background-color);
+  color: var(--pricing-text-color);
+  border-right: 1px dotted #000000;
+  padding: 20px;
+}
+
+.column-last {
+  background: var(--background-color);
+  color: var(--pricing-text-color);
+  padding: 20px;
+}
+
+/* gallery */
+.gallery {
+  color: var(--main-text-color);
+  margin-bottom: 50px;
+}
+
+.gallery h1 {
+  margin-bottom: 20px;
+}
+
+div.scroll-container {
+  background-color: var(--dark-color);
+  overflow: auto;
+  white-space: nowrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+
+/* utility classes */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* footer */
+.footer {
+  padding: 40px 0;
+  background: url("./images/arc_en_ciel.svg") no-repeat right bottom;
+  background-size: 14%;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .logo {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .logo img {
+  height: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+/* text classes */
+.text-xxl {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 40px 0 20px;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 30px 0 20px;
+}
+
+.text-md {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 20px 0 10px;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 10px 0 5px;
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,125 +1,178 @@
-<!doctype html>
-<html lang="en">
-    
+<!DOCTYPE html>
+<html lang="fr-FR">
 <head>
-<!-- general info -->
-<title>Sylvain's personal webpage</title>
-<meta charset="utf-8" />
-<meta name="description" content="Projects, publications and miscellaneous items I want to share" />
-
-<!-- links to css file ("stylesheet") and site icon -->
-<link href="css/style.css" type="text/css" rel="stylesheet" />
-<link href="images/icon.ico" type="image/x-icon" rel="shortcut icon" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <title>Ancrée - Ecouter, Coiffer, Révéler</title>
 </head>
 
 <body>
-<header>
-<!--content-->
-</header>
+  <!-- navigation bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="desktop-menu">
+        <menu>
+          <li>
+            <!-- dropdown list of projects -->
+            <div class="dropdown">
+              <a href="index.html">Réserver</a>
+              <div class="dropdown-content">
+                <a href="https://www.planity.com/ancree-chez-pampa-coworking-69003-lyon" target="_blank">Chez Pampa Coworking - Planity</a>
+                <a href="https://www.instagram.com/fanny.la.z" target="_blank">A Domicile dans les Monts d'or - Instagram</a>
+                <a href="https://www.instagram.com/fanny.la.z" target="_blank">A Domicile dans la région de Lille - Instagram</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="pricing.html">Prestations</a>
+          </li>
+        </menu>
+      </div>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo_berkeley_blue_transparent.png" alt="ancree logo" />
+        </a>
+      </div>
+      <div class="desktop-menu">
+        <menu>
+          <li>
+            <a href="#gallery">Galerie</a>
+          </li>
+          <li>
+            <a href="mailto:ancree.coiffure@gmail.com">Me contacter</a>
+          </li>
+        </menu>
+      </div>
+    </div>
+  </nav>
 
-<nav>
-  <a href="index.html" class="menu-item">home</a>
-  <a href="mailto:sylvain.pluchart@ec-lyon.fr" class="menu-item">contact</a>
-</nav>
-
-<!--header-->
-<section>
-  <h1><img src="./images/profile_picture.jpg" alt="profile picture" height="128"><span style="padding-left: 20px;">Sylvain Pluchart</span></h1>
-  <p>PhD student at the LMFA (Laboratoire de Mécanique des Fluides et d'Acoustique), Ecully, France</p>
-</section>
-
-<!--seperator-->
-<hr>
-
-<article>
-  <h2>Publications</h2>
-  <h3>Conference proceedings</h3>
-  <ul>
-
-		<li><span class="title">Integrated CFD-FEA Acoustics Workflow for Tonal Fan Noise Simulation: Far-Field Propagation and Design Impact Analysis</span>, 
-				<span class="author">Sylvain Pluchart and René Braun</span>,
-				<span class="url"><a href="https://doi.org/10.1115/GT2023-101056" target="_blank">GT2023-101056</a></span>
-		</li>
-
-    <li><span class="title">Rocket Engine Digital Twin - Modeling and Simulation Benefits</span>, 
-				<span class="author">David Jimenez-Mena, Sylvain Pluchart and Stéphane Mouvand</span>,
-				<span class="url"><a href="https://www.researchgate.net/publication/351022499_ROCKET_ENGINE_DIGITAL_TWIN" target="_blank">researchgate.net</a></span>
-		</li>
-
-	</ul>
+  <div class="main">
   
-  <h3>Blog articles</h3>
-  <ul>
+  <!-- welcome zone -->
+  <section class="welcome">
+    <div class="container">
+      <div class="welcome-text">
+        <h1 class="text-xxl">Ecouter, Coiffer, Révéler</h1>
+        <p class="text-md"> 
+        Bienvenue chez Ancrée ! Je m’appelle Fanny et pour moi, la coiffure est bien plus qu’une question de coup de ciseaux ou de mèches bien placées. C’est un langage, un moment de connexion, une façon de prendre soin des gens.
+        <br><br>
+        J’ai créé Ancrée pour offrir un espace différent où tu peux te poser, respirer, raconter ton histoire… Être toi tout simplement. Ici, pas de jugement : juste toi, tes cheveux et moi, à ton écoute.
+        <br><br>
+        Coiffeuse multitexutre, je me suis spécialisée dans le soin des cheveux ondulés à crépus. Mes tarifs sont non genrés, la valeur d’un rendez-vous ne se mesurant  pas à qui tu es, mais au temps et au soin que je t’accorde.
+        <br><br>
+        Je travaille avec des marques que j’ai soigneusement sélectionnées et choisies pour la qualité de leurs produits, leur respect de l’environnement, de tes cheveux et de ton cuir chevelu.
+        <br><br>
+        Avec Ancrée, je prends le temps de t’écouter, je te coiffe avec intention et révèle ce qui te rend unique.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <li><span class="title">How electrified aircraft propulsion impacts design processes</span>, 
-				<span class="url"><a href="https://blogs.sw.siemens.com/simcenter/how-electrified-aircraft-propulsion-impacts-design-processes/" target="_blank">blog.sw.siemens.com</a></span>
-		</li>
+  <!-- testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h1 class="text-xl center">Avis clients</h1>
+      <div class="testimonials-scroll">
+      <div class="testimonials-grid">
+        <!-- card template -->
+        <div class="card">
+          <p>
+          “Un grand merci à Fanny pour cette jolie coupe qui a transformé mes cheveux ondulés que je n’arrivais plus à apprécier ! 
+          Merci aussi de son accueil, professionnel et chaleureux comme à chaque fois.“
+          </p>
+          <p>Florence</p>
+        </div>
+        <!-- ************* -->
+
+        <!-- card template -->
+        <div class="card">
+          <p>
+          “Reçue et coiffée par Fanny qui a fait preuve d'une grande écoute de mes souhaits de coiffure ! 
+          Elle a procédé par étapes pour être sûre de mon choix qui était assez radical! 
+          Coiffeuse douée, de très bon conseil et très professionnelle ! 
+          Je recommande chaudement !“
+          </p>
+          <p>Fadila</p>
+        </div>
+        <!-- ************* -->
+
+        <!-- card template -->
+        <div class="card">
+          <p>
+          “Si vous cherchez celle qui vous reconciliera avec les coiffeurs, courez chez Ancrée ! 
+          Merci Fanny pour cette coupe parfaite et pour les conseils avisés, je reviendrai les yeux fermés“
+          </p>
+          <p>Victoria</p>
+        </div>
+        <!-- ************* -->
+
+        <!-- card template -->
+        <div class="card">
+          <p>
+          "Ce rdv avec Fanny était incroyable. Elle est à l'écoute et donne plein de conseils et recommandations. Si vous avez les cheveux bouclés, vous pouvez y aller les yeux fermés! Résultat TOP !!!!!!!"
+          </p>
+          <p>Sukayna</p>
+        </div>
+        <!-- ************* -->
+
+        <!-- card template -->
+        <div class="card">
+          <p>"Cela fait plusieurs années que je me fais coiffer par Fanny et comme à chaque fois c'est une chouette expérience: un accueil chaleureux, une coupe au top et de super conseils. Je recommande +++"
+          </p>
+          <p>Laura</p>
+        </div>
+        <!-- ************* -->
+
+        <!-- card template -->
+        <div class="card">
+          <p>"Une belle personne et surtout une coiffeuse au top. Vous pouvez y aller les yeux fermés, je recommande ++ d'autant plus si vous avez les cheveux texturés"
+          </p>
+          <p>Laetitia</p>
+        </div>
+        <!-- ************* -->
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </section>
   
-	</ul>
-</article>
+  <!-- gallery -->
+    <section class="gallery">
+      <div class="container">
+        <h1 id="gallery" class="text-xl center" id="gallery">Galerie</h1>
+      </div>
+      <div class="scroll-container">
+        <img src="images/gallery/1.jpg" height=600px alt="">
+        <img src="images/gallery/2.jpg" height=600px alt="">
+        <img src="images/gallery/3.jpg" height=600px alt="">
+        <img src="images/gallery/4.jpg" height=600px alt="">
+        <img src="images/gallery/5.jpg" height=600px alt="">
+        <img src="images/gallery/6.jpg" height=600px alt="">
+        <img src="images/gallery/7.jpg" height=600px alt="">
+      </div>
+    </section>
 
-<hr>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="logo">
+          <a href="https://www.instagram.com/fanny.la.z" target="_blank"><img src="images/logo-instagram.svg" alt="" /></a>
+        </div>
+        <div class="logo">
+          <a href="https://www.tiktok.com/@fanny.la.z" target="_blank"><img src="images/logo-tiktok.svg" alt="" /></a>
+        </div>
+        <div class="logo">
+          <a href="mailto:ancree.coiffure@gmail.com" target="_blank"><img src="images/logo-email.svg" alt="" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-<article>
-  <h2>Projects</h2>
-
-  <h3>Learning</h3>
-  <ul>
-    <li><span class="title">AE4314 Helicopter Performance, Stability and Control</span>, 
-				<span class="school">TU Delft online course</span>,
-				<span class="year">2020</span>,
-				<span class="url"><a href="./handouts/AE4314_Helicopter_Performance_Stability_and_Control_all_assignments.pdf" target="_blank">All assignments (pdf version)</a></span>
-		</li>
-
-    <li><span class="title">Projet Lanceur</span>, 
-				<span class="school">Ecole Centrale Paris</span>,
-				<span class="year">2013</span>,
-				<span class="url"><a href="./handouts/ECP_2013_projet_conception_lanceur_Nicholls_Pluchart.pdf" target="_blank">Final report (pdf version, in french)</a></span>
-		</li>
-  </ul>
-  
-	<h3>Lectures</h3>
-  <ul>
-
-    <li><span class="title">Electrification des commandes de vol et de la propulsion</span>, 
-				<span class="school">INSA Lyon - GE option CCSA</span>,
-				<span class="url"><a href="./handouts/INSA_Lyon_option_CCSA_electrification_des_aeronefs_cas_des_commandes_de_vol_notes_de_cours.pdf" target="_blank">Lecture's notes (in french)</a></span>
-		</li>
-
-    <li><span class="title">Electrification des véhicules aériens</span>, 
-				<span class="school">INSA Lyon - Mastère spécialisé Expert en Véhicules Electrifiés</span>,
-				<span class="url"><a href="./handouts/INSA_Lyon_Mastere_EVE_electrification_des_vehicules_aeriens_planches.pdf" target="_blank">Slide set (in french)</a></span>
-		</li>
-
-  </ul>
-  
-	<h3>Code</h3>
-  <ul>
-
-    <li><span class="title">Reinforcement learning - Monte Carle methods with the racetrack example</span>, 
-				<span class="reference">Reinforcement Learning by Sutton and Barto - chapter 5</span>,
-				<span class="url"><a href="https://github.com/spluchart/RL_monte_carlo_racetrack" target="_blank">git repo</a></span>
-		</li>
-  
-	</ul>
-</article>
-
-<hr>
-
-<article>
-  <h2>Miscellaneous</h2>
-
-
-
-
-</article>
-
-<footer>
-
-<hr>
-
-<p>last update: 5th October 2024</p>
-</footer>
+  </div>
 
 </body>
 </html>
