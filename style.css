@@ -148,7 +148,7 @@ img {
 }
 
 .welcome .container {
-  background: url("./images/welcome.jpg") no-repeat;
+  background: url("./images/welcome_web_res.jpg") no-repeat;
   background-size: 30%;
   /*background-position: right top;*/
   background-position: 85% 50%;
