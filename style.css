@@ -229,7 +229,7 @@ div.testimonials-scroll {
 
 .pricing h1 {
   margin-bottom: 20px;
-  color: var(--pricing-title-color);
+  color: var(--title-color);
 }
 
 .pricing h2 {
