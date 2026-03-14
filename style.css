@@ -18,7 +18,8 @@
   --menu-text-color:        var(--berkeley-blue-color);
   --menu-text-hover-color:  var(--fushia-color);
   --main-text-color:        var(--black-color);
-  --title-color:            var(--fushia-color);
+  --main-title-color:       var(--fushia-color);
+  --title-color:            var(--dark-green-color);
   --card-background-color:  var(--berkeley-blue-color);
   --card-text-color:        var(--honeydew-color);
   --pricing-title-color:    var(--berkeley-blue-color);
@@ -161,7 +162,7 @@ img {
 }
 
 .welcome h1 {
-  color: var(--title-color);
+  color: var(--main-title-color);
 }
 
 /* testimonials */
