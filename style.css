@@ -10,17 +10,21 @@
   --berkeley-blue-color: #1d3557;
   --red-pantone-color:   #e63946;
   --black-color:         #000000;
+  --fushia-color:        #c60d59;
+  --dark-green-color:    #35571d;
+  --light-white-color:   #fcfeff;
 
-  --background-color:       var(--honeydew-color);
+  --background-color:       var(--light-white-color);
   --menu-text-color:        var(--berkeley-blue-color);
-  --menu-text-hover-color:  var(--red-pantone-color);
-  --main-text-color:        var(--berkeley-blue-color);
+  --menu-text-hover-color:  var(--fushia-color);
+  --main-text-color:        var(--black-color);
+  --title-color:            var(--fushia-color);
   --card-background-color:  var(--berkeley-blue-color);
   --card-text-color:        var(--honeydew-color);
   --pricing-title-color:    var(--berkeley-blue-color);
   --pricing-text-color:     var(--black-color);
-  --pricing-item-color:     var(--red-pantone-color);
-  --pricing-euros-color:    var(--red-pantone-color);
+  --pricing-item-color:     var(--fushia-color);
+  --pricing-euros-color:    var(--dark-green-color);
 }
 
 html {
@@ -153,6 +157,11 @@ img {
   width: 55%;
   text-align: justify;
   text-justify: inter-character;
+  color: var(--main-text-color);
+}
+
+.welcome h1 {
+  color: var(--title-color);
 }
 
 /* testimonials */
@@ -164,6 +173,7 @@ img {
 
 .testimonials h1 {
   margin-bottom: 20px;
+  color: var(--title-color);
 }
 
 div.testimonials-scroll {
@@ -250,6 +260,7 @@ div.testimonials-scroll {
 
 .pricing-euros {
   color: var(--pricing-euros-color);
+  font-weight: 600;
 }
 
 .column {
@@ -273,6 +284,7 @@ div.testimonials-scroll {
 
 .gallery h1 {
   margin-bottom: 20px;
+  color: var(--title-color);
 }
 
 div.scroll-container {

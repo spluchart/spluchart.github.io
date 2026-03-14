@@ -1,0 +1,19 @@
+2026_03_14
+[X] photo 3 -> 1
+[X] 2 -> dernier
+[X] reduire resolution (temps de chargement)
+
+[X] coupe courte : 45€ au lieu de 39
+[X] courte + soin : 80 au lieu de 74
+[X] coupe enfant à ajouter
+[X] soin profond coiffure protectrice 105 pas 74
+[X] enlever coupe de pointe
+
+[X] fond +blanc
+[X] mettre prix en gras
+
+[ ] arc-en-ciel en dark green
+[X] parametre couleur text accueil
+[X] titre accueil en fushia
+
+[X] mettre prix sous la prestation
